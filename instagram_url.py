@@ -4,7 +4,7 @@ import re
 
 
 def collect_txt():
-    f = open("Jason.html",'r',encoding='UTF-8')
+    f = open("LiuJason_Instagram.html",'r',encoding='UTF-8')
     w = open("web.txt",'w',encoding='UTF-8')
     line = f.readlines()
     news = []

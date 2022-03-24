@@ -2,6 +2,8 @@
 
 
 import pymysql
+import random
+
 
 
 db = pymysql.connect("localhost","root","creatcomm@123")
@@ -60,7 +62,7 @@ def create_table():
 def input_value():
     cursor = db.cursor()
     cursor.execute("use JAVBUS_datebase;")
-    sql = "insert into J_MOVIE(number,name,small_img,big_img,create_time,time,producer,publisher,series,classes,actor)values('JUFE-165','W肉便器 巨乳の若妻達を同時に変態調教した記録 三原ほのか 松ゆきの','E:\\BaiduNetdiskDownload\\Movie\\OTIM-020\\OTIM-020.jpg','E:\\\BaiduNetdiskDownload\\\Movie\\\OTIM-020\\\OTIM-020_big.jpg','2020-04-11','170分鐘','Fitch','Fitch','W肉便器','羞恥 DMM獨家 已婚婦女 巨乳 巨尻 SM 中出 肛交 放尿 紧缚 凌辱 高畫質','三原ほのか 松ゆきの')"
+    sql = "insert into J_MOVIE(number,name,small_img,big_img,create_time,time,producer,publisher,series,classes,actor)values(n,'W','E:\\BaiduNetdiskDownload\\Movie\\OTIM-020\\OTIM-020.jpg','E:\\\BaiduNetdiskDownload\\\Movie\\\OTIM-020\\\OTIM-020_big.jpg','2020-04-11','170分鐘','Fitch','Fitch','W','sdsd','三')"
 
     cursor.execute(sql)
     db.commit()
